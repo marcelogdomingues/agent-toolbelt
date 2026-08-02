@@ -1,0 +1,46 @@
+site_name: agent-toolbelt
+site_url: https://marcelogdomingues.github.io/agent-toolbelt/
+repo_url: https://github.com/marcelogdomingues/agent-toolbelt
+repo_name: marcelogdomingues/agent-toolbelt
+docs_dir: docs
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/marcelogdomingues/agent-toolbelt

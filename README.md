@@ -7,6 +7,8 @@ required — bring your own model loop.
 
 🌍 **[English](README.md)** · [Português](README.pt.md) · 📚 [Documentation](docs/README.md)
 
+<p align="center"><img src="assets/demo.svg" alt="agent-toolbelt: define, expose and call a tool" width="100%"></p>
+
 [![CI](https://github.com/marcelogdomingues/agent-toolbelt/actions/workflows/ci.yml/badge.svg)](https://github.com/marcelogdomingues/agent-toolbelt/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/agent-toolbelt.svg)](https://www.npmjs.com/package/agent-toolbelt)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14">
+  <rect width="760" height="300" rx="10" fill="#0d1117"/>
+  <rect width="760" height="36" rx="10" fill="#161b22"/>
+  <rect y="26" width="760" height="10" fill="#161b22"/>
+  <circle cx="20" cy="18" r="6" fill="#ff5f56"/><circle cx="40" cy="18" r="6" fill="#ffbd2e"/><circle cx="60" cy="18" r="6" fill="#27c93f"/>
+  <text x="380" y="23" text-anchor="middle" fill="#8b949e">agent-toolbelt</text>
+  <text xml:space="preserve" x="20" y="70"><tspan fill="#8b949e">// define once, typed with zod</tspan></text>
+  <text xml:space="preserve" x="20" y="94"><tspan fill="#d2a8ff">defineTool</tspan><tspan fill="#c9d1d9">({ name: </tspan><tspan fill="#ffa657">'send_email'</tspan><tspan fill="#c9d1d9">, scopes: [</tspan><tspan fill="#ffa657">'email:send'</tspan><tspan fill="#c9d1d9">], … })</tspan></text>
+  <text xml:space="preserve" x="20" y="128"><tspan fill="#8b949e">registry.toJSONSchema()</tspan><tspan fill="#c9d1d9"> → JSON Schema for the LLM</tspan></text>
+  <text xml:space="preserve" x="20" y="160"><tspan fill="#c9d1d9">registry.call(</tspan><tspan fill="#ffa657">'send_email'</tspan><tspan fill="#c9d1d9">, args, { scopes })</tspan></text>
+  <text xml:space="preserve" x="20" y="184"><tspan fill="#27c93f">✓ validated + authorized → { delivered: true }</tspan></text>
+  <text xml:space="preserve" x="20" y="216"><tspan fill="#c9d1d9">registry.call(</tspan><tspan fill="#ffa657">'send_email'</tspan><tspan fill="#c9d1d9">, args, { scopes: [] })</tspan></text>
+  <text xml:space="preserve" x="20" y="240"><tspan fill="#ff7b72">✗ ScopeError: requires scope(s): email:send</tspan></text>
+  <text xml:space="preserve" x="20" y="242"></text>
+  <text xml:space="preserve" x="20" y="282"><tspan fill="#6e7681">typed tools · JSON Schema · validation · scopes · middleware</tspan></text>
+</svg>
