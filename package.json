@@ -1,0 +1,59 @@
+{
+  "name": "agent-toolbelt",
+  "version": "0.1.0",
+  "description": "A tiny, framework-agnostic tool registry for LLM agents: define typed tools with zod, export JSON Schema for function calling, and run validated, scope-checked calls through middleware.",
+  "keywords": [
+    "ai-agents",
+    "llm",
+    "tool-calling",
+    "function-calling",
+    "tools",
+    "zod",
+    "json-schema",
+    "agent-framework",
+    "typescript"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "author": "Marcelo Domingues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelogdomingues/agent-toolbelt.git"
+  },
+  "homepage": "https://github.com/marcelogdomingues/agent-toolbelt#readme",
+  "bugs": "https://github.com/marcelogdomingues/agent-toolbelt/issues",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "demo": "node --import tsx src/demo.ts",
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "zod": "^4.0.0"
+  },
+  "dependencies": {
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "tsx": "^4.23.1",
+    "typescript": "^5.7.2"
+  }
+}
